@@ -1,0 +1,37 @@
+:root {
+    --gradient-color_one: #702dff;
+    --gradient-color_two: #9747ff;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    background: linear-gradient(
+        to right,
+        var(--gradient-color_one) 0%,
+        var(--gradient-color_two) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.image_folder {
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    img {
+        border-radius: 1rem;
+        height: 100%;
+    }
+}
