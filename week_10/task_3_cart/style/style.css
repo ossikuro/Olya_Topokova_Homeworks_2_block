@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 2rem;
+    img {
+        width: 40rem;
+        border-radius: 1rem;
+    }
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.calculation {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid lightslategray;
+    border-radius: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 0.75rem;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 0.5rem;
+}
