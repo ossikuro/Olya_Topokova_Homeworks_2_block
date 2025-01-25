@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ToDo List</title>
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/normalize.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <div class="white_wrapper">
+            <h1 class="page_title">ToDo List</h1>
+            <article class="new_task">
+                <input
+                    type="text"
+                    class="regular_input"
+                    id="new_task_field"
+                    placeholder="Новая задача"
+                />
+                <button class="solid_button" id="submit_task">Добавить</button>
+            </article>
+            <section class="task_list_wrapper" id="main_list">
+                <ul class="task_list">
+                    <li class="task" id="empty_list">
+                        Нет работы, нет проблем
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
