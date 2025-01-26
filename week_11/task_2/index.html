@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/normalize.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Корзина</title>
+    </head>
+    <body>
+        <section class="item_list">
+            <div class="block_title">Корзина</div>
+        </section>
+        <section class="pricing">
+            <div class="block_title">Сумма заказа</div>
+            <div class="discount_wrapper">
+                <div class="discount-content">
+                    <div class="discount-text">
+                        Скидка 20%
+                        <div class="discount-text-description">
+                            Действует при первой покупке товара
+                        </div>
+                    </div>
+                    <button class="button-white" id="apply_discount">
+                        Применить
+                    </button>
+                </div>
+            </div>
+            <div class="sum-wrapper">
+                <div class="order_sum_line">
+                    <div class="subsum-title">Сумма заказа</div>
+                    <div
+                        class="subsum-value"
+                        id="subsum-value-calculation"
+                    ></div>
+                </div>
+                <div class="order_sum_line" id="discount_sum_line">
+                    <div class="subsum-title">Скидка</div>
+                    <div
+                        class="subsum-value"
+                        id="discount-value-calculation"
+                    ></div>
+                </div>
+            </div>
+            <div class="order_sum_total">
+                <div class="sum_total_title">Итого</div>
+                <div class="sum_total_value">1</div>
+            </div>
+        </section>
+        <script src="./index.js"></script>
+    </body>
+</html>
