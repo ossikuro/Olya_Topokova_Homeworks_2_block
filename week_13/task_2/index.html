@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Комментарии</title>
+    </head>
+    <body>
+        <div class="card">
+            <section class="add_comment_wrapper">
+                <input
+                    type="text"
+                    id="name_input"
+                    placeholder="имя"
+                    class="input_style"
+                />
+                <input
+                    type="text"
+                    id="avatar_input"
+                    placeholder="ссылка на аватар"
+                    class="input_style"
+                />
+                <textarea
+                    type="textarea"
+                    id="comment_input"
+                    placeholder="комментарий"
+                    class="input_style input_multiline"
+                ></textarea>
+                <button id="send_comment" class="button" disabled>
+                    Отправить
+                </button>
+            </section>
+            <section
+                class="comments_render_wrapper"
+                id="comments_list"
+            ></section>
+            <script src="./index.mjs" type="module"></script>
+        </div>
+    </body>
+</html>
