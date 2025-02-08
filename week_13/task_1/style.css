@@ -1,0 +1,14 @@
+.error {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+.error-input {
+    border: 2px solid red;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
