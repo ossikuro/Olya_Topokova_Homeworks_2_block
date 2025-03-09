@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/normalize.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>Форма регистрации</title>
+    </head>
+    <body>
+        <section class="block_wrapper">
+            <form
+                name="registrationForm"
+                class="form_wrapper"
+                id="registrationForm"
+            >
+                <div class="form_title">Регистрация</div>
+                <div class="data">
+                    <label for="login">Логин*</label>
+                    <input
+                        type="text"
+                        name="login"
+                        class="input_text"
+                        id="login"
+                        placeholder="Например, джонни"
+                        required
+                    />
+                    <div class="error" id="loginError">
+                        Имя должно содержать только буквы и пробелы (2-20
+                        символов)
+                    </div>
+                </div>
+
+                <div class="data">
+                    <label for="email">Email*</label>
+                    <input
+                        type="text"
+                        name="email"
+                        class="input_text"
+                        id="email"
+                        placeholder="Email"
+                    />
+                    <div class="error" id="emailError">
+                        Добавьте существующий email
+                    </div>
+                </div>
+
+                <div class="data">
+                    <label for="age">Возраст*</label>
+                    <input
+                        type="number"
+                        name="age"
+                        class="input_text"
+                        id="age"
+                        placeholder="Возраст"
+                    />
+                    <div class="error" id="ageError">Укажите возраст</div>
+                </div>
+
+                <div class="data">
+                    <label for="gender">Пол</label>
+                    <div class="gender_wrapper">
+                        <div class="radio_label">
+                            <input type="radio" name="gender" id="male" />
+                            Мужчина
+                        </div>
+                        <div class="radio_label">
+                            <input type="radio" name="gender" id="female" />
+                            Женщина
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <label for="gender">Профессия*</label>
+                    <select name="profession" class="select" id="profession">
+                        <option selected disabled>Выберите профессию</option>
+                        <option value="Врач">Врач</option>
+                        <option value="Программист">Программист</option>
+                        <option value="Учитель">Учитель</option>
+                        <option value="Дизайнер">Дизайнер</option>
+                        <option value="Инженер">Инженер</option>
+                        <option value="Продавец">Продавец</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                    <div class="error" id="professionError">
+                        Выберите профессию
+                    </div>
+                </div>
+                <div class="data">
+                    <label for="password">Пароль*</label>
+                    <input
+                        type="password"
+                        name="password"
+                        class="input_text"
+                        id="password"
+                        placeholder="пароль"
+                        required
+                    />
+                    <div class="error" id="passwordError">
+                        Пароль должен быть не менее 8 символов и содержать как
+                        минимум одну заглавную букву, одну строчную букву и одну
+                        цифру
+                    </div>
+                </div>
+                <div class="agreement_wrapper">
+                    <div class="radio_label">
+                        <input type="checkbox" name="agreement" id="terms" />
+                        <label for="agreement">
+                            Я согласен с обработкой данных</label
+                        >
+                    </div>
+                    <div class="error" id="termsError">
+                        Необходимо ваше согласие
+                    </div>
+                </div>
+                <button type="submit" class="button" id="submitBtn" disabled>
+                    Зарегестрироваться
+                </button>
+            </form>
+        </section>
+        <script src="index.js" defer></script>
+    </body>
+</html>
